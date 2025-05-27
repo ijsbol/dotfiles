@@ -116,5 +116,9 @@ export PATH="/opt/homebrew/opt/kleopatra/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 
+export JAVA_HOME="/usr/local/opt/openjdk@17"
+export PATH="$JAVA_HOME/bin:$PATH"
+
 export GPG_TTY=$(tty)
 gpgconf --launch gpg-agent
+export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
