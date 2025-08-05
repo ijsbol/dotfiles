@@ -122,3 +122,6 @@ export PATH="$JAVA_HOME/bin:$PATH"
 export GPG_TTY=$(tty)
 gpgconf --launch gpg-agent
 export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+export PATH="/opt/homebrew/opt/python/bin:$PATH"
+export PYTHONPATH="/opt/homebrew/opt/python/bin"
+export PYTHON="/opt/homebrew/opt/python/bin"
