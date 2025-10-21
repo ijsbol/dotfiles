@@ -60,7 +60,7 @@ ZSH_THEME="scrumpy"
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -125,3 +125,12 @@ export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 export PATH="/opt/homebrew/opt/python/bin:$PATH"
 export PYTHONPATH="/opt/homebrew/opt/python/bin"
 export PYTHON="/opt/homebrew/opt/python/bin"
+
+HISTFILE=~/.histfile
+HISTSIZE=5000
+SAVEHIST=5000
+setopt autocd extendedglob
+bindkey -e
+
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+export PATH="$HOME/dotfiles:$PATH"
